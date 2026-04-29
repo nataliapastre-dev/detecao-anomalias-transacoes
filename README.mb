@@ -1,39 +1,85 @@
-📊 Detecção de Anomalias em Transações com Python
-🧠 Sobre o projeto
+# 📊 Detecção de Anomalias em Transações com Python
 
-Este projeto tem como objetivo identificar transações suspeitas (anomalias) em um conjunto de dados utilizando técnicas de Machine Learning não supervisionado.
+## 🧠 Visão geral do projeto
 
-Foi desenvolvido como parte dos estudos no bootcamp da DIO em parceria com a Accenture – Python para Análise e Automação de Dados, aplicando conceitos de análise de dados e detecção de padrões.
+Este projeto tem como objetivo identificar **transações financeiras suspeitas (anomalias)** utilizando técnicas de **Machine Learning não supervisionado**.
 
-🎯 Objetivo
-Identificar transações fora do padrão
-Aplicar algoritmo de detecção de anomalias
-Visualizar resultados de forma simples e clara
-⚙️ Tecnologias utilizadas
-Python 3
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-📁 Estrutura do projeto
-detecao-anomalias/
-│
-├── main.py
-├── transacoes.csv
-├── README.md
-└── venv/ (opcional)
-📊 Como funciona
+A solução simula um cenário real de análise de fraudes, onde não há rótulos prévios de “certo ou errado”, e o algoritmo precisa aprender padrões normais de comportamento para identificar desvios.
 
-O projeto segue estas etapas:
+---
 
-Leitura do dataset de transações
-Normalização dos dados
-Aplicação do modelo Isolation Forest
-Classificação das transações:
-1 → normal
--1 → anomalia
-Visualização gráfica dos resultados
-🧪 Exemplo de dataset
+## 🎓 Contexto do curso
+
+Este projeto foi desenvolvido durante o bootcamp:
+
+**DIO + Accenture – Python para Análise e Automação de Dados**
+
+Durante o curso foram abordados conceitos fundamentais de:
+- Análise de dados com Python
+- Manipulação de datasets com Pandas
+- Pré-processamento de dados
+- Introdução ao Machine Learning
+- Aplicações práticas em automação e análise de dados
+
+---
+
+## 🎯 Objetivo do projeto
+
+- Simular análise de transações financeiras
+- Detectar padrões fora do comportamento normal
+- Aplicar algoritmo de detecção de anomalias
+- Visualizar resultados de forma clara e interpretável
+- Praticar pipeline básico de Data Science
+
+---
+
+## ⚙️ Tecnologias utilizadas
+
+- Python 3
+- Pandas (manipulação de dados)
+- NumPy (operações numéricas)
+- Scikit-learn (Machine Learning)
+- Matplotlib (visualização de dados)
+
+---
+
+## 🧠 Como o projeto funciona
+
+O fluxo do projeto segue etapas típicas de um pipeline de Data Science:
+
+### 1. Leitura dos dados
+Carregamento de um dataset simples de transações financeiras.
+
+### 2. Pré-processamento
+Normalização dos valores para garantir melhor desempenho do modelo.
+
+### 3. Aplicação do modelo
+Uso do algoritmo **Isolation Forest**, especializado em detectar outliers.
+
+### 4. Classificação
+Cada transação recebe uma classificação:
+- `1` → transação normal
+- `-1` → possível anomalia
+
+### 5. Visualização
+Geração de gráfico para facilitar a interpretação dos resultados.
+
+---
+
+## 📊 Funcionalidades implementadas
+
+✔ Leitura de dataset CSV  
+✔ Tratamento e normalização dos dados  
+✔ Aplicação de modelo de Machine Learning  
+✔ Identificação automática de anomalias  
+✔ Visualização gráfica dos resultados  
+✔ Estrutura simples e replicável  
+
+---
+
+## 🧪 Exemplo de dados utilizados
+
+```csv id="data1"
 valor_transacao
 100
 120
@@ -45,32 +91,37 @@ valor_transacao
 140
 160
 1800
-🚀 Como executar o projeto
-1. Clone o repositório
-git clone https://github.com/seu-usuario/detecao-anomalias.git
-2. Acesse a pasta
-cd detecao-anomalias
-3. Crie o ambiente virtual (opcional)
-python -m venv venv
-venv\Scripts\activate
-4. Instale as dependências
-pip install pandas numpy scikit-learn matplotlib
-5. Execute o projeto
-python main.py
-📈 Resultado
 
-O sistema gera:
+📈 Resultados obtidos
 
-Lista de transações com classificação
-Gráfico destacando anomalias
-💡 Possíveis melhorias
-Implementar Streamlit para dashboard interativo
+O modelo foi capaz de identificar com sucesso transações fora do padrão, destacando valores muito acima da média como possíveis anomalias.
+
+Exemplo de comportamento detectado:
+
+Transações pequenas e médias → classificadas como normais
+Valores muito altos (ex: 2000, 5000) → marcados como anomalias
+📌 Principais aprendizados
+Como funciona detecção de outliers na prática
+Importância do pré-processamento de dados
+Uso de algoritmos não supervisionados
+Interpretação de resultados em Machine Learning
+Estrutura básica de um projeto de Data Science
+🚀 Possíveis melhorias futuras
 Adicionar mais variáveis (data, categoria, cliente)
-Testar outros algoritmos:
+Testar outros modelos:
 One-Class SVM
 Local Outlier Factor
+Criar dashboard interativo com Streamlit
 Exportar resultados em CSV
-👩‍💻 Autora
+Integrar com API ou sistema real de transações
+👩‍💻 Sobre o projeto
 
-Desenvolvido por Natália Baptista Pastre
-📌 Projeto acadêmico e de portfólio em transição para área de tecnologia
+Projeto desenvolvido por Natália Baptista Pastre
+📌 Em transição para área de Tecnologia
+📌 Foco em Desenvolvimento Front-end e Análise de Dados
+
+Este projeto faz parte do portfólio acadêmico e de evolução prática em Data Science.
+
+⭐ Conclusão
+
+Este projeto representa um primeiro passo na aplicação prática de Machine Learning para problemas reais, reforçando conceitos fundamentais de análise de dados e detecção de padrões em sistemas financeiros.
