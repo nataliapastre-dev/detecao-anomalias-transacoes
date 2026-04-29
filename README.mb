@@ -1,0 +1,76 @@
+📊 Detecção de Anomalias em Transações com Python
+🧠 Sobre o projeto
+
+Este projeto tem como objetivo identificar transações suspeitas (anomalias) em um conjunto de dados utilizando técnicas de Machine Learning não supervisionado.
+
+Foi desenvolvido como parte dos estudos no bootcamp da DIO em parceria com a Accenture – Python para Análise e Automação de Dados, aplicando conceitos de análise de dados e detecção de padrões.
+
+🎯 Objetivo
+Identificar transações fora do padrão
+Aplicar algoritmo de detecção de anomalias
+Visualizar resultados de forma simples e clara
+⚙️ Tecnologias utilizadas
+Python 3
+Pandas
+NumPy
+Scikit-learn
+Matplotlib
+📁 Estrutura do projeto
+detecao-anomalias/
+│
+├── main.py
+├── transacoes.csv
+├── README.md
+└── venv/ (opcional)
+📊 Como funciona
+
+O projeto segue estas etapas:
+
+Leitura do dataset de transações
+Normalização dos dados
+Aplicação do modelo Isolation Forest
+Classificação das transações:
+1 → normal
+-1 → anomalia
+Visualização gráfica dos resultados
+🧪 Exemplo de dataset
+valor_transacao
+100
+120
+150
+2000
+130
+110
+5000
+140
+160
+1800
+🚀 Como executar o projeto
+1. Clone o repositório
+git clone https://github.com/seu-usuario/detecao-anomalias.git
+2. Acesse a pasta
+cd detecao-anomalias
+3. Crie o ambiente virtual (opcional)
+python -m venv venv
+venv\Scripts\activate
+4. Instale as dependências
+pip install pandas numpy scikit-learn matplotlib
+5. Execute o projeto
+python main.py
+📈 Resultado
+
+O sistema gera:
+
+Lista de transações com classificação
+Gráfico destacando anomalias
+💡 Possíveis melhorias
+Implementar Streamlit para dashboard interativo
+Adicionar mais variáveis (data, categoria, cliente)
+Testar outros algoritmos:
+One-Class SVM
+Local Outlier Factor
+Exportar resultados em CSV
+👩‍💻 Autora
+
+Desenvolvido por Natália Baptista Pastre
+📌 Projeto acadêmico e de portfólio em transição para área de tecnologia
