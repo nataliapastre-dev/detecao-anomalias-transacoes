@@ -1,5 +1,7 @@
 # 📊 Detecção de Anomalias em Transações com Python
 
+---
+
 ## 🧠 Visão geral do projeto
 
 Este projeto tem como objetivo identificar **transações financeiras suspeitas (anomalias)** utilizando técnicas de **Machine Learning não supervisionado**.
@@ -15,71 +17,73 @@ Este projeto foi desenvolvido durante o bootcamp:
 **DIO + Accenture – Python para Análise e Automação de Dados**
 
 Durante o curso foram abordados conceitos fundamentais de:
-- Análise de dados com Python
-- Manipulação de datasets com Pandas
-- Pré-processamento de dados
-- Introdução ao Machine Learning
-- Aplicações práticas em automação e análise de dados
+
+- Análise de dados com Python  
+- Manipulação de datasets com Pandas  
+- Pré-processamento de dados  
+- Introdução ao Machine Learning  
+- Aplicações práticas em automação e análise de dados  
 
 ---
 
 ## 🎯 Objetivo do projeto
 
-- Simular análise de transações financeiras
-- Detectar padrões fora do comportamento normal
-- Aplicar algoritmo de detecção de anomalias
-- Visualizar resultados de forma clara e interpretável
-- Praticar pipeline básico de Data Science
+- Simular análise de transações financeiras  
+- Detectar padrões fora do comportamento normal  
+- Aplicar algoritmo de detecção de anomalias  
+- Visualizar resultados de forma clara e interpretável  
+- Praticar pipeline básico de Data Science  
 
 ---
 
 ## ⚙️ Tecnologias utilizadas
 
-- Python 3
-- Pandas (manipulação de dados)
-- NumPy (operações numéricas)
-- Scikit-learn (Machine Learning)
-- Matplotlib (visualização de dados)
+- Python 3  
+- Pandas (manipulação de dados)  
+- NumPy (operações numéricas)  
+- Scikit-learn (Machine Learning)  
+- Matplotlib (visualização de dados)  
 
 ---
 
 ## 🧠 Como o projeto funciona
 
-O fluxo do projeto segue etapas típicas de um pipeline de Data Science:
+O fluxo do projeto segue etapas de um pipeline de Data Science:
 
 ### 1. Leitura dos dados
 Carregamento de um dataset simples de transações financeiras.
 
 ### 2. Pré-processamento
-Normalização dos valores para garantir melhor desempenho do modelo.
+Normalização dos valores para melhorar o desempenho do modelo.
 
 ### 3. Aplicação do modelo
-Uso do algoritmo **Isolation Forest**, especializado em detectar outliers.
+Uso do algoritmo **Isolation Forest**, especializado em detecção de outliers.
 
 ### 4. Classificação
 Cada transação recebe uma classificação:
-- `1` → transação normal
-- `-1` → possível anomalia
+
+- `1` → transação normal  
+- `-1` → possível anomalia  
 
 ### 5. Visualização
-Geração de gráfico para facilitar a interpretação dos resultados.
+Gráfico para facilitar interpretação dos resultados.
 
 ---
 
 ## 📊 Funcionalidades implementadas
 
-✔ Leitura de dataset CSV  
-✔ Tratamento e normalização dos dados  
-✔ Aplicação de modelo de Machine Learning  
-✔ Identificação automática de anomalias  
-✔ Visualização gráfica dos resultados  
-✔ Estrutura simples e replicável  
+- Leitura de dataset CSV  
+- Tratamento e normalização de dados  
+- Aplicação de Machine Learning  
+- Detecção automática de anomalias  
+- Visualização gráfica dos resultados  
+- Estrutura simples e replicável  
 
 ---
 
-## 🧪 Exemplo de dados utilizados
+## 🧪 Exemplo de dataset
 
-```csv id="data1"
+```csv
 valor_transacao
 100
 120
@@ -91,37 +95,3 @@ valor_transacao
 140
 160
 1800
-
-📈 Resultados obtidos
-
-O modelo foi capaz de identificar com sucesso transações fora do padrão, destacando valores muito acima da média como possíveis anomalias.
-
-Exemplo de comportamento detectado:
-
-Transações pequenas e médias → classificadas como normais
-Valores muito altos (ex: 2000, 5000) → marcados como anomalias
-📌 Principais aprendizados
-Como funciona detecção de outliers na prática
-Importância do pré-processamento de dados
-Uso de algoritmos não supervisionados
-Interpretação de resultados em Machine Learning
-Estrutura básica de um projeto de Data Science
-🚀 Possíveis melhorias futuras
-Adicionar mais variáveis (data, categoria, cliente)
-Testar outros modelos:
-One-Class SVM
-Local Outlier Factor
-Criar dashboard interativo com Streamlit
-Exportar resultados em CSV
-Integrar com API ou sistema real de transações
-👩‍💻 Sobre o projeto
-
-Projeto desenvolvido por Natália Baptista Pastre
-📌 Em transição para área de Tecnologia
-📌 Foco em Desenvolvimento Front-end e Análise de Dados
-
-Este projeto faz parte do portfólio acadêmico e de evolução prática em Data Science.
-
-⭐ Conclusão
-
-Este projeto representa um primeiro passo na aplicação prática de Machine Learning para problemas reais, reforçando conceitos fundamentais de análise de dados e detecção de padrões em sistemas financeiros.
