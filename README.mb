@@ -1,97 +1,65 @@
 # 📊 Detecção de Anomalias em Transações com Python
 
----
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-## 🧠 Visão geral do projeto
-
-Este projeto tem como objetivo identificar **transações financeiras suspeitas (anomalias)** utilizando técnicas de **Machine Learning não supervisionado**.
+Este projeto tem como objetivo identificar **transações financeiras suspeitas (anomalias)** utilizando técnicas de **Machine Learning não supervisionado**. 
 
 A solução simula um cenário real de análise de fraudes, onde não há rótulos prévios de “certo ou errado”, e o algoritmo precisa aprender padrões normais de comportamento para identificar desvios.
 
 ---
 
-## 🎓 Contexto do curso
+## 🎓 Contexto do Curso
 
 Este projeto foi desenvolvido durante o bootcamp:
-
-**DIO + Accenture – Python para Análise e Automação de Dados**
+**`DIO + Accenture – Python para Análise e Automação de Dados`**
 
 Durante o curso foram abordados conceitos fundamentais de:
-
-- Análise de dados com Python  
-- Manipulação de datasets com Pandas  
-- Pré-processamento de dados  
-- Introdução ao Machine Learning  
-- Aplicações práticas em automação e análise de dados  
-
----
-
-## 🎯 Objetivo do projeto
-
-- Simular análise de transações financeiras  
-- Detectar padrões fora do comportamento normal  
-- Aplicar algoritmo de detecção de anomalias  
-- Visualizar resultados de forma clara e interpretável  
-- Praticar pipeline básico de Data Science  
+* Análise de dados com Python  
+* Manipulação de datasets com Pandas  
+* Pré-processamento de dados  
+* Introdução ao Machine Learning  
+* Aplicações práticas em automação e análise de dados  
 
 ---
 
-## ⚙️ Tecnologias utilizadas
+## 🎯 Objetivo do Projeto
 
-- Python 3  
-- Pandas (manipulação de dados)  
-- NumPy (operações numéricas)  
-- Scikit-learn (Machine Learning)  
-- Matplotlib (visualização de dados)  
-
----
-
-## 🧠 Como o projeto funciona
-
-O fluxo do projeto segue etapas de um pipeline de Data Science:
-
-### 1. Leitura dos dados
-Carregamento de um dataset simples de transações financeiras.
-
-### 2. Pré-processamento
-Normalização dos valores para melhorar o desempenho do modelo.
-
-### 3. Aplicação do modelo
-Uso do algoritmo **Isolation Forest**, especializado em detecção de outliers.
-
-### 4. Classificação
-Cada transação recebe uma classificação:
-
-- `1` → transação normal  
-- `-1` → possível anomalia  
-
-### 5. Visualização
-Gráfico para facilitar interpretação dos resultados.
+* Simular análise de transações financeiras.
+* Detectar padrões fora do comportamento normal.
+* Aplicar algoritmo de detecção de anomalias (**Isolation Forest**).
+* Visualizar resultados de forma clara e interpretável.
+* Praticar um pipeline básico de Data Science.
 
 ---
 
-## 📊 Funcionalidades implementadas
+## 🧠 Como o Projeto Funciona
 
-- Leitura de dataset CSV  
-- Tratamento e normalização de dados  
-- Aplicação de Machine Learning  
-- Detecção automática de anomalias  
-- Visualização gráfica dos resultados  
-- Estrutura simples e replicável  
+O fluxo do projeto segue as etapas clássicas de um pipeline de dados:
+1. **Leitura dos dados:** Carregamento de um dataset simples de transações financeiras.
+2. **Pré-processamento:** Engenharia de recursos básica ou ajuste de formato (ex: `reshape` para o modelo).
+3. **Aplicação do modelo:** Uso do algoritmo **Isolation Forest**, especializado em detecção de *outliers*.
+4. **Classificação:** Cada transação recebe uma classificação automática:
+   * `1` ➔ Transação normal  
+   * `-1` ➔ Possível anomalia (outlier)  
+5. **Visualização:** Geração de gráficos para facilitar a tomada de decisão.
 
 ---
 
-## 🧪 Exemplo de dataset
+## ⚙️ Tecnologias e Dependências
 
-```csv
-valor_transacao
-100
-120
-150
-2000
-130
-110
-5000
-140
-160
-1800
+* **Python 3**
+* **Pandas** (Manipulação de dados)  
+* **NumPy** (Operações numéricas)  
+* **Scikit-learn** (Machine Learning)  
+* **Matplotlib** (Visualização de dados)  
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### 1. Clonar o repositório
+```bash
+git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+cd NOME-DO-REPOSITORIO
