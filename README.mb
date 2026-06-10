@@ -1,63 +1,149 @@
-# 📊 Detecção de Anomalias em Transações com Python
+# 📊 Detecção de Anomalias em Transações Financeiras com Python
 
+## 📖 Sobre o Projeto
 
+Este projeto foi desenvolvido com o objetivo de identificar **transações financeiras potencialmente suspeitas** utilizando técnicas de **Machine Learning não supervisionado**.
 
-Este projeto tem como objetivo identificar **transações financeiras suspeitas (anomalias)** utilizando técnicas de **Machine Learning não supervisionado**. 
+A aplicação simula um cenário real de análise de fraudes, no qual não existem classificações prévias indicando quais operações são legítimas ou fraudulentas. Nesse contexto, o modelo é responsável por aprender os padrões normais dos dados e detectar comportamentos que fogem do esperado.
 
-A solução simula um cenário real de análise de fraudes, onde não há rótulos prévios de “certo ou errado”, e o algoritmo precisa aprender padrões normais de comportamento para identificar desvios.
-
----
-
-## 🎓 Contexto do Curso
-
-Este projeto foi desenvolvido durante o bootcamp:
-**`DIO + Accenture – Python para Análise e Automação de Dados`**
-
-Durante o curso foram abordados conceitos fundamentais de:
-* Análise de dados com Python  
-* Manipulação de datasets com Pandas  
-* Pré-processamento de dados  
-* Introdução ao Machine Learning  
-* Aplicações práticas em automação e análise de dados  
+Além da implementação do algoritmo, o projeto contempla etapas importantes de um fluxo de análise de dados, como preparação dos dados, modelagem e visualização dos resultados.
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎓 Contexto Acadêmico
 
-* Simular análise de transações financeiras.
-* Detectar padrões fora do comportamento normal.
-* Aplicar algoritmo de detecção de anomalias (**Isolation Forest**).
-* Visualizar resultados de forma clara e interpretável.
-* Praticar um pipeline básico de Data Science.
+Projeto desenvolvido durante o bootcamp **DIO + Accenture – Python para Análise e Automação de Dados**.
 
----
+Durante a formação foram explorados conceitos essenciais para atuação na área de dados, incluindo:
 
-## 🧠 Como o Projeto Funciona
-
-O fluxo do projeto segue as etapas clássicas de um pipeline de dados:
-1. **Leitura dos dados:** Carregamento de um dataset simples de transações financeiras.
-2. **Pré-processamento:** Engenharia de recursos básica ou ajuste de formato (ex: `reshape` para o modelo).
-3. **Aplicação do modelo:** Uso do algoritmo **Isolation Forest**, especializado em detecção de *outliers*.
-4. **Classificação:** Cada transação recebe uma classificação automática:
-   * `1` ➔ Transação normal  
-   * `-1` ➔ Possível anomalia (outlier)  
-5. **Visualização:** Geração de gráficos para facilitar a tomada de decisão.
+* Manipulação e análise de dados com Python;
+* Tratamento e preparação de datasets;
+* Estatística aplicada;
+* Fundamentos de Machine Learning;
+* Automação de processos com Python;
+* Visualização e interpretação de dados.
 
 ---
 
-## ⚙️ Tecnologias e Dependências
+## 🎯 Objetivos
 
-* **Python 3**
-* **Pandas** (Manipulação de dados)  
-* **NumPy** (Operações numéricas)  
-* **Scikit-learn** (Machine Learning)  
-* **Matplotlib** (Visualização de dados)  
+* Simular um ambiente de monitoramento de transações financeiras;
+* Identificar padrões anormais de comportamento;
+* Aplicar técnicas de detecção de anomalias;
+* Explorar algoritmos de Machine Learning não supervisionado;
+* Desenvolver habilidades práticas em análise de dados;
+* Gerar visualizações para apoio à interpretação dos resultados.
+
+---
+
+## 🧠 Metodologia Utilizada
+
+O projeto segue um fluxo simplificado de Data Science:
+
+### 1. Coleta e Leitura dos Dados
+
+Carregamento do conjunto de dados contendo informações de transações financeiras.
+
+### 2. Pré-processamento
+
+Preparação dos dados para utilização pelo modelo, incluindo ajustes estruturais e tratamento necessário para análise.
+
+### 3. Treinamento do Modelo
+
+Aplicação do algoritmo **Isolation Forest**, amplamente utilizado para identificação de outliers e comportamentos incomuns em grandes volumes de dados.
+
+### 4. Classificação das Transações
+
+Após o processamento, cada registro recebe uma classificação:
+
+| Resultado | Significado                  |
+| --------- | ---------------------------- |
+| 1         | Transação considerada normal |
+| -1        | Possível anomalia detectada  |
+
+### 5. Visualização dos Resultados
+
+Geração de gráficos para facilitar a análise dos padrões encontrados e apoiar a tomada de decisão.
+
+---
+
+## 🤖 Algoritmo Utilizado
+
+### Isolation Forest
+
+O **Isolation Forest** é um algoritmo de Machine Learning não supervisionado voltado para detecção de anomalias.
+
+Seu funcionamento baseia-se na ideia de que registros incomuns são mais fáceis de isolar do que registros considerados normais. Dessa forma, o algoritmo consegue identificar possíveis fraudes, erros ou comportamentos atípicos sem a necessidade de dados previamente rotulados.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* Python 3
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+
+---
+
+## 📈 Resultados Esperados
+
+Com a execução do projeto é possível:
+
+* Detectar transações com comportamento fora do padrão;
+* Visualizar anomalias em gráficos;
+* Compreender o funcionamento básico de algoritmos de detecção de outliers;
+* Aplicar conceitos introdutórios de Machine Learning em um caso de uso próximo ao mercado financeiro.
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-### 1. Clonar o repositório
+### Clone o repositório
+
 ```bash
-git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
 cd NOME-DO-REPOSITORIO
+```
+
+### Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### Execute o projeto
+
+```bash
+python main.py
+```
+
+---
+
+## 💡 Aprendizados
+
+Durante o desenvolvimento deste projeto foi possível praticar:
+
+* Manipulação de dados com Pandas;
+* Preparação de datasets para Machine Learning;
+* Aplicação de algoritmos não supervisionados;
+* Interpretação de resultados analíticos;
+* Visualização de dados com Matplotlib;
+* Estruturação de projetos em Python.
+
+---
+
+## 👩‍💻 Autora
+
+**Natália Baptista Pastre**
+
+Desenvolvedora Full Stack em formação, com foco em desenvolvimento web, automação de processos e análise de dados.
+
+* GitHub: https://github.com/nataliapastre-dev
+* LinkedIn: https://www.linkedin.com/in/nataliapastre-dev/
+
+---
+
+⭐ Projeto desenvolvido para fins de estudo e aprimoramento de conhecimentos em Python, Ciência de Dados e Machine Learning.
+
