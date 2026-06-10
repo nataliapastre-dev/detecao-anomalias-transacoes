@@ -97,28 +97,26 @@ Com a execução do projeto é possível:
 * Aplicar conceitos introdutórios de Machine Learning em um caso de uso próximo ao mercado financeiro.
 
 ---
-
 ## 🚀 Como Executar o Projeto
 
-### Clone o repositório
+### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-cd NOME-DO-REPOSITORIO
+git clone https://github.com/nataliapastre-dev/detecao-anomalias-transacoes.git
+cd deteccao-anomalias-transacoes
 ```
 
-### Instale as dependências
+### 2. Instale as dependências
 
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy scikit-learn matplotlib
 ```
 
-### Execute o projeto
+### 3. Execute o projeto
 
 ```bash
 python main.py
 ```
-
 ---
 
 ## 💡 Aprendizados
